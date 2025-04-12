@@ -1,60 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>チャン・バン・ユアン｜ポートフォリオ</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | チャン・バン・ユアン</title>
+  <link 
+href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+rel="stylesheet">
+  <link 
+href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" 
+rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow p-6">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between">
-      <div class="flex items-center space-x-4">
-        <img src="avatar.jpg" alt="Avatar" class="w-20 h-20 rounded-full shadow-lg ring-2 ring-blue-500" />
-        <div>
-          <h1 class="text-2xl font-bold">チャン・バン・ユアン</h1>
-          <p class="text-sm text-gray-500">AIエンジニア志望｜日本語チャットボット開発者</p>
-        </div>
-      </div>
+  <header class="bg-blue-800 text-white p-6 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">チャン・バン・ユアン</h1>
+      <a href="https://github.com/doanhtv0801" target="_blank" 
+class="text-white hover:text-yellow-300 text-lg">
+        <i class="fab fa-github mr-1"></i> GitHub
+      </a>
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto py-10 px-4 space-y-8">
-    <section>
-      <h2 class="text-xl font-bold border-b pb-2 mb-4">📌 プロジェクト概要</h2>
-      <p>
-        FlaskとNLTKを使った日本語対応チャットボットアプリです。<br />
-        感情分析、チャット履歴保存、ダークモード対応などを含みます。
-      </p>
-    </section>
+  <section class="container mx-auto p-6">
+    <div class="bg-white rounded-lg shadow p-6 mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://avatars.githubusercontent.com/u/17195961?v=4" 
+alt="avatar" class="w-24 h-24 rounded-full border-4 border-blue-500">
+        <div>
+          <h2 class="text-xl font-bold mb-1">自己紹介</h2>
+          <p class="leading-relaxed text-sm">
+            
+初めまして！私はベトナムのハイフォン市で生まれ、市内の小・中・高を卒業後平成23年9月ベトナムの労働組合大学に進学しました。大学では主に会計学について学んでいましたが途中でITの専門知識を学びたいと考えるようになり、平成24年9月ベトナムのハノイ大学情報技術学部情報技術学科に編入し、平成28年6月学士（情報技術学)学位を得て卒業しました。その後、もともと興味がある日本でITの専門知識を生かして働きたいと考え、平成28年10月渡日し、日本語学校に入学。その後、IT企業にてシステムエンジニアとして活躍中です。
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <section>
-      <h2 class="text-xl font-bold border-b pb-2 mb-4">🛠 使用技術</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Python 3.10</li>
-        <li>Flask 3</li>
-        <li>NLTK</li>
-        <li>HTML/CSS/JavaScript</li>
-        <li>Tailwind CSS</li>
-      </ul>
-    </section>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold text-blue-700 mb-2">💬 
+日本語チャットボットアプリ</h3>
+        <p class="text-sm 
+mb-2">FlaskとNLTKを使用して日本語のチャットボットを構築。ダークモード、アバター表示、タイピングエフェクト、履歴保存機能などを実装。</p>
+        <a href="https://github.com/doanhtv0801/chatbot-nltk-flask-ja" 
+target="_blank" class="text-blue-600 hover:underline text-sm">GitHub 
+リポジトリを見る</a>
+      </div>
 
-    <section>
-      <h2 class="text-xl font-bold border-b pb-2 mb-4">🖼 スクリーンショット</h2>
-      <img src="screenshot.png" alt="App Screenshot" class="shadow-lg rounded-lg border" />
-    </section>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold text-blue-700 mb-2">😊 
+感情認識アプリ</h3>
+        <p class="text-sm 
+mb-2">画像をアップロードして顔の表情をAIモデル（FER2013で学習）で分析するWebアプリ。Flask, 
+TensorFlow, OpenCV使用。</p>
+        <a href="https://github.com/doanhtv0801/emotion-detection-app" 
+target="_blank" class="text-blue-600 hover:underline text-sm">GitHub 
+リポジトリを見る</a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2 class="text-xl font-bold border-b pb-2 mb-4">🧠 学びと感想</h2>
-      <p>
-        Pythonと日本語処理の難しさを実感しつつも、実用的なチャットボットを構築できたことで大きな達成感を得ました。
-      </p>
-    </section>
-  </main>
-
-  <footer class="text-center text-sm text-gray-500 py-6">
-    &copy; 2025 チャン・バン・ユアン
+  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 チャン・バン・ユアン | All rights reserved.</p>
   </footer>
 </body>
 </html>
+
