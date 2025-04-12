@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ | チャン・バン・ユアン</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trần Văn Doanh｜ポートフォリオ</title>
   <link 
 href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
 rel="stylesheet">
-  <link 
-href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" 
-rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-800 text-white p-6 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">チャン・バン・ユアン</h1>
-      <a href="https://github.com/doanhtv0801" target="_blank" 
-class="text-white hover:text-yellow-300 text-lg">
-        <i class="fab fa-github mr-1"></i> GitHub
-      </a>
-    </div>
-  </header>
-
-  <section class="container mx-auto p-6">
-    <div class="bg-white rounded-lg shadow p-6 mb-6">
-      <div class="flex items-center space-x-4">
-        <img src="avatar.jpg" 
-alt="avatar" class="w-24 h-24 rounded-full border-4 border-blue-500">
-        <div>
-          <h2 class="text-xl font-bold mb-1">自己紹介</h2>
-          <p class="leading-relaxed text-sm">
-            
-初めまして！私はベトナムのハイフォン市で生まれ、市内の小・中・高を卒業後平成23年9月ベトナムの労働組合大学に進学しました。大学では主に会計学について学んでいましたが途中でITの専門知識を学びたいと考えるようになり、平成24年9月ベトナムのハノイ大学情報技術学部情報技術学科に編入し、平成28年6月学士（情報技術学)学位を得て卒業しました。その後、もともと興味がある日本でITの専門知識を生かして働きたいと考え、平成28年10月渡日し、日本語学校に入学。その後、IT企業にてシステムエンジニアとして活躍中です。
-          </p>
-        </div>
+<body class="bg-gray-100 text-gray-900">
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <div class="flex items-center space-x-4">
+      <img src="avatar.jpg" alt="Avatar" class="w-24 h-24 rounded-full 
+border-4 border-indigo-500" />
+      <div>
+        <h1 class="text-3xl font-bold">チャン・バン・ユアン</h1>
+        <p class="text-gray-600">AIエンジニア志望 / フルスタック開発者</p>
       </div>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-lg font-semibold text-blue-700 mb-2">💬 
-日本語チャットボットアプリ</h3>
-        <p class="text-sm 
-mb-2">FlaskとNLTKを使用して日本語のチャットボットを構築。ダークモード、アバター表示、タイピングエフェクト、履歴保存機能などを実装。</p>
-        <a href="https://github.com/doanhtv0801/chatbot-nltk-flask-ja" 
-target="_blank" class="text-blue-600 hover:underline text-sm">GitHub 
-リポジトリを見る</a>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 
+border-indigo-500">自己紹介</h2>
+      <p class="mt-4 leading-relaxed">
+        
+初めまして！私はベトナムのハイフォン市で生まれ、市内の小・中・高を卒業後平成23年9月ベトナムの労働組合大学に進学しました。
+        
+大学では主に会計学について学んでいましたが途中でITの専門知識を学びたいと考えるようになり、平成24年9月ベトナムのハノイ大学情報技術学部情報技術学科に編入し、平成28年6月学士（情報技術学)学位を得て卒業しました。
+        
+その後、もともと興味がある日本でITの専門知識を生かして働きたいと考え、平成28年10月渡日し、日本語学校に入学。その後、ソフトウェア会社に就職し現在FPTジャパンで上流SEとして活動中です。
+      </p>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 
+border-indigo-500">プロジェクト</h2>
+
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">① 日本語チャットボット (Flask + 
+NLTK)</h3>
+        <p class="mt-2 text-gray-700">
+          Flask と NLTK 
+を使用した日本語対応のシンプルなチャットボットです。ユーザーの入力を分析し、基本的な挨拶や質問に対して応答します。
+          UI 
+はダークモード対応で、ボットのアバター表示やタイピングアニメーションも実装済み。会話履歴は 
+JSON に保存され、将来的な分析に活用可能です。
+        </p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>NLTKで日本語トークン化</li>
+          <li>Flaskフォーム連携</li>
+          <li>会話ログ保存（JSON）</li>
+          <li>ダークテーマ＋アニメーション効果</li>
+        </ul>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-lg font-semibold text-blue-700 mb-2">😊 
-感情認識アプリ</h3>
-        <p class="text-sm 
-mb-2">画像をアップロードして顔の表情をAIモデル（FER2013で学習）で分析するWebアプリ。Flask, 
-TensorFlow, OpenCV使用。</p>
-        <a href="https://github.com/doanhtv0801/emotion-detection-app" 
-target="_blank" class="text-blue-600 hover:underline text-sm">GitHub 
-リポジトリを見る</a>
+      <div class="mt-6">
+        <h3 class="text-xl font-bold">② 感情認識Webアプリ (Flask + 
+TensorFlow)</h3>
+        <p class="mt-2 text-gray-700">
+          
+ユーザーが画像をアップロードすると、感情分類モデル（FER2013ベース）を使って顔の表情を7カテゴリに分類（怒り・嫌悪・恐れ・幸せ・悲しみ・驚き・無表情）。
+          結果は UI 
+上に表示され、同時にCSVファイルとして履歴に記録されます。Tailwindを使ったダークテーマやスピナーによる「感情を分析中...」表示も実装済み。
+        </p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>画像分類モデルをTensorFlow/Kerasで自作</li>
+          <li>FER2013のデータから訓練</li>
+          <li>リアルタイムアップロード＆応答</li>
+          <li>履歴CSV保存機能付き</li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
-    <p>&copy; 2025 チャン・バン・ユアン | All rights reserved.</p>
-  </footer>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 
+border-indigo-500">GitHub</h2>
+      <p class="mt-4 text-blue-600 underline">
+        <a href="https://github.com/doanhtv0801" 
+target="_blank">https://github.com/doanhtv0801</a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>
 
